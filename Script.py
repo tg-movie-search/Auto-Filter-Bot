@@ -140,7 +140,7 @@ class script(object):
 
 <b>‣ ꜱɪᴢᴇ : </b>{file_size}
 
-<b>🍁 ʙʏ : <a href="https://telegram.me/techifybots">[ ᴛᴇᴄʜɪꜰʏʙᴏᴛs ]</a></b>"""
+<b>🍁 ʙʏ : <a href="https://telegram.me/pichoduno1">[ Pichodu ]</a></b>"""
 
     UPDATE_NOTIFY_TXT = """</b><a href={poster_url}>📥</a><a href={imdb_url}>New {tag} Added</a></b>
 
