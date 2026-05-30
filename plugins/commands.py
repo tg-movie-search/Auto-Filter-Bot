@@ -95,7 +95,7 @@ async def start(client, message):
                         InlineKeyboardButton('ᴀʙᴏᴜᴛ 📜', callback_data='about'),
                         InlineKeyboardButton('ᴜᴘɢʀᴀᴅᴇ 🎟', callback_data="premium_info")
                    ],[
-                        InlineKeyboardButton('🌸 ᴀɴɪᴍᴇ ɢᴜɪᴅᴇ 🌸', user_id=int(OWNER))
+                        InlineKeyboardButton('Admin', user_id=int(6505906100))
                     ]]
             reply_markup = InlineKeyboardMarkup(buttons)
             m=await message.reply_sticker("CAACAgUAAxkBAAI47WjK1V24t_kyUL-ywJQQdxtaWnaeAAIMFgACpzEZVdpZS0jMvfn5HgQ")
@@ -331,7 +331,7 @@ async def start(client, message):
                     limit_info = f"\n\n📊 ʏᴏᴜ ʜᴀᴠᴇ ʀᴇᴄᴇɪᴠᴇᴅ {used}/{FILES_LIMIT} ꜰʀᴇᴇ ꜰɪʟᴇꜱ ᴛᴏᴅᴀʏ."
                     f_caption += limit_info
                 await msg.edit_caption(f_caption, reply_markup=InlineKeyboardMarkup(btn))
-                k = await msg.reply(f"<i>⚠️ ᴛʜɪꜱ ꜰɪʟᴇ/ᴠɪᴅᴇᴏ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ {get_time(DELETE_TIME)} 🫥 (ᴅᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ɪꜱꜱᴜᴇꜱ).</i>\n\n<blockquote><b>ᴘʟᴇᴀꜱᴇ ꜰᴏʀᴡᴀʀᴅ ᴛʜɪꜱ ꜰɪʟᴇ ᴛᴏ ꜱᴏᴍᴇᴡʜᴇʀᴇ ᴇʟꜱᴇ ᴀɴᴅ ꜱᴛᴀʀᴛ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴛʜᴇʀᴇ.</b></blockquote>", quote=True)     
+                k = await msg.reply(f"<i>⚠️ ᴛʜɪꜱ ꜰɪʟᴇ/ᴠɪᴅᴇᴏ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ {get_time(15)} 🫥 (ᴅᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ɪꜱꜱᴜᴇꜱ).</i>\n\n<blockquote><b>ᴘʟᴇᴀꜱᴇ ꜰᴏʀᴡᴀʀᴅ ᴛʜɪꜱ ꜰɪʟᴇ ᴛᴏ ꜱᴏᴍᴇᴡʜᴇʀᴇ ᴇʟꜱᴇ ᴀɴᴅ ꜱᴛᴀʀᴛ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴛʜᴇʀᴇ.</b></blockquote>", quote=True)     
                 await asyncio.sleep(DELETE_TIME)
                 await msg.delete()
                 await k.edit_text("<b>ʏᴏᴜʀ ᴠɪᴅᴇᴏ/ꜰɪʟᴇ ɪꜱ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ !!</b>")
