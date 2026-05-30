@@ -92,9 +92,7 @@ async def start(client, message):
             await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
         if len(message.command) != 2:
             buttons = [[
-                        InlineKeyboardButton('ᴀʙᴏᴜᴛ 📜', callback_data='about'),
-                        InlineKeyboardButton('ᴜᴘɢʀᴀᴅᴇ 🎟', callback_data="premium_info")
-                   ],[
+                
                         InlineKeyboardButton('Admin', user_id=int(6505906100))
                     ]]
             reply_markup = InlineKeyboardMarkup(buttons)
